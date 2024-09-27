@@ -1,0 +1,1 @@
+{"root":["./src/providers.tsx","./src/bootstrap.tsx","./src/index.tsx","./src/vite-env.d.ts","./src/components/menubarbottom.tsx","./src/components/menubarside.tsx","./src/pages/about.tsx","./src/pages/home.tsx","./src/pages/products.tsx","./src/pages/settings.tsx","./src/utils/usewindowsize.tsx"],"version":"5.6.2"}
