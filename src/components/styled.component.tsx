@@ -28,12 +28,27 @@ export const SideMenubarDivBox = styled.div`
   }
 `;
 
+
+export const BottomMenuStickyDiv = styled.div`
+  display: none;
+  @media (max-width: 800px) {
+    display: block;
+    overflow: hidden;
+    background-color: #161616;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+  }
+`;
+
 export const BottomMenuBarArea = styled.div`
+  position: sticky;
+  bottom: 0;
   background-color: #111111;
-  flex: 0 0 70px;
   display: flex;
   justify-content: space-around;
-  padding : 0px 4px 2px;
+  padding: 0px 4px 2px;
 `;
 
 export const BottomMenubarDivBox = styled.div`

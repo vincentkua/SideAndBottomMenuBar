@@ -17,7 +17,7 @@ const Providers = () => {
       <FullHeightFlexBox>
         {!mobileScreen && <MenubarSide />}
         <AppContentArea>
-          <div style={{ flexGrow: 1 }}>
+          <div style={{ flexGrow: 0 }}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/products" element={<Products />} />

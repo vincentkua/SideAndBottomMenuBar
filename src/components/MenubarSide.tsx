@@ -19,7 +19,12 @@ const MenubarSide = () => {
     <>
       <SideMenuBarArea>
         <SideMenuLogo>
-          <FlameIcon fill="red" strokeWidth={0} size={24} style={{ marginRight: "15px" }}/>
+          <FlameIcon
+            fill="red"
+            strokeWidth={0}
+            size={24}
+            style={{ marginRight: "15px" }}
+          />
           <p>Sample App</p>
         </SideMenuLogo>
         <SideMenubarDivBox onClick={() => navigate("/")}>
