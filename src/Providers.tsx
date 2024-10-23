@@ -6,7 +6,10 @@ import Settings from "./pages/Settings";
 import MenubarSide from "./components/MenubarSide";
 import MenubarBottom from "./components/MenubarBottom";
 import { useWindowSize } from "./utils/useWindowSize";
-import { AppContentArea, FullHeightFlexBox } from "./styled.component";
+import {
+  AppContentArea,
+  FullHeightFlexBox,
+} from "./components/styled.component";
 
 const Providers = () => {
   const { width } = useWindowSize();
@@ -17,7 +20,7 @@ const Providers = () => {
       <FullHeightFlexBox>
         {!mobileScreen && <MenubarSide />}
         <AppContentArea>
-          <div style={{ flexGrow: 0 }}>
+          <div>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/products" element={<Products />} />

@@ -28,13 +28,21 @@ export const SideMenubarDivBox = styled.div`
   }
 `;
 
+export const BottomMenuReserveDiv = styled.div`
+  display: none;
+  @media (max-width: 800px) {
+    display: block;
+    background-color: #ffffff;
+    height: 100px;
+  }
+`;
 
 export const BottomMenuStickyDiv = styled.div`
   display: none;
   @media (max-width: 800px) {
     display: block;
     overflow: hidden;
-    background-color: #161616;
+    background-color: #111111;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -64,4 +72,16 @@ export const BottomMenubarDivBox = styled.div`
   &:hover {
     color: #e6e6e6;
   }
+`;
+
+export const FullHeightFlexBox = styled.div`
+  display: flex;
+  height: 100vh;
+`;
+
+export const AppContentArea = styled.div`
+  flex-grow: 1;
+  border: 1px solid gray;
+  background-color: #ffffff;
+  overflow-y: scroll;
 `;

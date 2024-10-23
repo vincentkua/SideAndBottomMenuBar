@@ -7,6 +7,7 @@ import {
 import {
   BottomMenuBarArea,
   BottomMenubarDivBox,
+  BottomMenuReserveDiv,
   BottomMenuStickyDiv,
 } from "./styled.component";
 import { useNavigate } from "react-router-dom";
@@ -15,6 +16,7 @@ const MenubarBottom = () => {
   const navigate = useNavigate();
   return (
     <>
+      <BottomMenuReserveDiv />
       <BottomMenuStickyDiv>
         <BottomMenuBarArea>
           <BottomMenubarDivBox onClick={() => navigate("/")}>
