@@ -19,19 +19,19 @@ const MenubarBottom = () => {
       <BottomMenuReserveDiv />
       <BottomMenuFixedDiv>
         <BottomMenuBarArea>
-          <BottomMenubarDivBox onClick={() => navigate("/")}>
+          <BottomMenubarDivBox onClick={() => navigate("/")} selected={true}>
             <HomeIcon size={24} />
             <p>Home</p>
           </BottomMenubarDivBox>
-          <BottomMenubarDivBox onClick={() => navigate("/products")}>
+          <BottomMenubarDivBox onClick={() => navigate("/products")} selected={false}>
             <ShoppingCartIcon size={24} />
             <p>Products</p>
           </BottomMenubarDivBox>
-          <BottomMenubarDivBox onClick={() => navigate("/about")}>
+          <BottomMenubarDivBox onClick={() => navigate("/about")} selected={false}>
             <InfoIcon size={24} />
             <p>About</p>
           </BottomMenubarDivBox>
-          <BottomMenubarDivBox onClick={() => navigate("/settings")}>
+          <BottomMenubarDivBox onClick={() => navigate("/settings")} selected={false}>
             <SettingsIcon size={24} />
             <p>Settings</p>
           </BottomMenubarDivBox>

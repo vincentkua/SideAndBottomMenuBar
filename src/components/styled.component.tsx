@@ -18,13 +18,13 @@ export const SideMenuLogo = styled.div`
   }
 `;
 
-export const SideMenubarDivBox = styled.div`
+export const SideMenubarDivBox = styled.div<{ selected: boolean }>`
   display: flex;
   align-items: center;
   height: 48px;
   cursor: pointer;
   padding: 12px;
-  color: #9e9e9e;
+  color: ${({ selected }) => (selected ? "#ffffff" : "#707070")};
 
   > p {
     margin: 0;
@@ -63,14 +63,14 @@ export const BottomMenuBarArea = styled.div`
   justify-content: space-around;
 `;
 
-export const BottomMenubarDivBox = styled.div`
+export const BottomMenubarDivBox = styled.div<{ selected: boolean }>`
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
   cursor: pointer;
   padding: 12px;
-  color: #9e9e9e;
+  color: ${({ selected }) => (selected ? "#ffffff" : "#707070")};
   font-size: 10px;
 
   &:hover {

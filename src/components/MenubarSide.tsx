@@ -27,19 +27,19 @@ const MenubarSide = () => {
           />
           <p>Sample App</p>
         </SideMenuLogo>
-        <SideMenubarDivBox onClick={() => navigate("/")}>
+        <SideMenubarDivBox onClick={() => navigate("/")} selected={true}>
           <HomeIcon size={24} style={{ marginRight: "15px" }} />
           <p>Home</p>
         </SideMenubarDivBox>
-        <SideMenubarDivBox onClick={() => navigate("/products")}>
+        <SideMenubarDivBox onClick={() => navigate("/products")} selected={false}>
           <ShoppingCartIcon size={24} style={{ marginRight: "15px" }} />
           <p>Products</p>
         </SideMenubarDivBox>
-        <SideMenubarDivBox onClick={() => navigate("/about")}>
+        <SideMenubarDivBox onClick={() => navigate("/about")} selected={false}>
           <InfoIcon size={24} style={{ marginRight: "15px" }} />
           <p>About</p>
         </SideMenubarDivBox>
-        <SideMenubarDivBox onClick={() => navigate("/settings")}>
+        <SideMenubarDivBox onClick={() => navigate("/settings")} selected={false}>
           <SettingsIcon size={24} style={{ marginRight: "15px" }} />
           <p>Settings</p>
         </SideMenubarDivBox>
