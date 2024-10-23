@@ -12,6 +12,10 @@ export const SideMenuLogo = styled.div`
   padding: 12px;
   color: lightgray;
   font-weight: bold;
+
+  > p {
+    margin: 0;
+  }
 `;
 
 export const SideMenubarDivBox = styled.div`
@@ -21,6 +25,10 @@ export const SideMenubarDivBox = styled.div`
   cursor: pointer;
   padding: 12px;
   color: #9e9e9e;
+
+  > p {
+    margin: 0;
+  }
 
   &:hover {
     background-color: #2b2b2b;
