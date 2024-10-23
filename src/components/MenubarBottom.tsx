@@ -8,7 +8,7 @@ import {
   BottomMenuBarArea,
   BottomMenubarDivBox,
   BottomMenuReserveDiv,
-  BottomMenuStickyDiv,
+  BottomMenuFixedDiv,
 } from "./styled.component";
 import { useNavigate } from "react-router-dom";
 
@@ -17,7 +17,7 @@ const MenubarBottom = () => {
   return (
     <>
       <BottomMenuReserveDiv />
-      <BottomMenuStickyDiv>
+      <BottomMenuFixedDiv>
         <BottomMenuBarArea>
           <BottomMenubarDivBox onClick={() => navigate("/")}>
             <HomeIcon size={24} />
@@ -36,7 +36,7 @@ const MenubarBottom = () => {
             <p>Settings</p>
           </BottomMenubarDivBox>
         </BottomMenuBarArea>
-      </BottomMenuStickyDiv>
+      </BottomMenuFixedDiv>
     </>
   );
 };

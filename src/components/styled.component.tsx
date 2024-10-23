@@ -37,7 +37,7 @@ export const BottomMenuReserveDiv = styled.div`
   }
 `;
 
-export const BottomMenuStickyDiv = styled.div`
+export const BottomMenuFixedDiv = styled.div`
   display: none;
   @media (max-width: 800px) {
     display: block;
@@ -51,12 +51,8 @@ export const BottomMenuStickyDiv = styled.div`
 `;
 
 export const BottomMenuBarArea = styled.div`
-  position: sticky;
-  bottom: 0;
-  background-color: #111111;
   display: flex;
   justify-content: space-around;
-  padding: 0px 4px 2px;
 `;
 
 export const BottomMenubarDivBox = styled.div`
