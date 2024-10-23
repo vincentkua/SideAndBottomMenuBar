@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import TopBannerPng from "./bluebanner.png";
 
 export const SideMenuBarArea = styled.div`
   background-color: #111111;
@@ -87,5 +88,38 @@ export const AppContentArea = styled.div`
   flex-grow: 1;
   border: 1px solid gray;
   background-color: #ffffff;
-  overflow-y: scroll;
+  overflow-y: auto;
+`;
+
+export const TopMenuArea = styled.div`
+  height: 150px;
+  padding: 16px;
+  background-color: #dddddd;
+  color: #ffffff;
+  margin: 0;
+  font-weight: bold;
+  background-image: url(${TopBannerPng});
+  background-size: cover;
+  background-position: center;
+
+  > div:nth-child(1) {
+    color: white;
+    margin-top: 2px;
+  }
+  > div:nth-child(2) {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 24px;
+  }
+  > div:nth-child(3) {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 10px;
+  }
+`;
+
+export const BodyContentArea = styled.div`
+  padding: 16px;
+  font-size: 14px;
 `;
